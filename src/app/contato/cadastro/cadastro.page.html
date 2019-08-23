@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+      <ion-item>
+        <ion-label position="floating"> Email: </ion-label>
+        <ion-input type="text" [(ngModel)]="contato.email" placeholder ="Digite seu email:"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> Senha: </ion-label>
+        <ion-input type="password" [(ngModel)]="contato.senha" placeholder ="Digite sua senha:"></ion-input>
+      </ion-item>
+
+      <ion-button href="home"> back </ion-button>
+      <ion-button href="salvar" (click)="salvar()">salvar</ion-button>
+</ion-content>
